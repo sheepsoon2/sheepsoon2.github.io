@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang = "ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
-    <!-- css 연결 -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>sheepsoon2.github.io</title>
-  </head>
-  <body>
-    <h1>Sheepsoon2 Github</h1>
-    <p></p>
-    <p><a href = "app-ads.txt">app-ads.txt 파일 보기</a></p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
+  <title>sheepsoon2.github.io</title>
+  <!-- css 연결 -->
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">sheepsoon2</div>
+    <nav>
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Android (Java, Android Studio, SQLite, REST API), Web (JSP, Python, HTML, CSS, JavaScript, MySQL)</p>
+    </section>
+    
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="poltfolio-item" onclick="showDetails('flag')">FLAG</div>
+      <div class="poltfolio-item" onclick="showDetails('jsp')">JSP 웹페이지</div>
+      
+      <div id="flag" class="portfolio-details">
+        <h3>FLAG: 국기 퀴즈 애플리케이션</h3>
+        <p>전 세계 200개 이상의 국가 깃발을 보고 나라 이름을 맞히는 퀴즈 애플리케이션</p>
+        <p>개발 환경: Android, Java, SQLite, REST API</p>
+        <p>주요 기능: Splash 화면 (Lottie 애니메이션), 퀴즈 기능, 다국어 지원</p>
+      </div>
+      <div id="jsp" class="portfolio-details">
+      <h3>JSP 웹페이지</h3>
+      <p>JSP 기반의 웹크롤링 및 게시판 기능 구현</p>
+      <p>개발 환경: Java, JSP, Python, HTML, CSS, MySQL</p>
+      <p>주요 기능: 회원가입, 로그인, 웹크롤링 DB 연동</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="sheepsoon2@gmail.com">sheepsoon2@gmail.com</a></p>
+    </section>
+</body>
 </html>
