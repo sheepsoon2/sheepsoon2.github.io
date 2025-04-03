@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow: hidden;
+  line-height: 1.6;
+  color: #333;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 100px 20px;
+  max-width: 800px;
+  margin: 80px auto 0;
+}
+#portfolio {
+  background: #ddd;
+}
+#contact {
+  background: #ccc;
+}
+.portfolio-item {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.portfolio-item:hover {
+  background: #bbb;
+}
+.protfolio-details {
+  display: none;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
