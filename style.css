@@ -39,6 +39,9 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-event: auto;
 }
 
 /* 헤더 스타일 */
@@ -222,12 +225,13 @@ section {
   position: absolute;
   width: 1040px;
   height: 380px;
+  
 }
 
 .portfolio-content{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
