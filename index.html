@@ -1,51 +1,103 @@
 <!DOCTYPE html>
-<html lang = "ko">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sheepsoon2.github.io</title>
-  <!-- css 연결 -->
-<!--   <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="logo">sheepsoon2</div>
-<!--     <nav>
-      <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>Android (Java, Android Studio, SQLite, REST API), Web (JSP, Python, HTML, CSS, JavaScript, MySQL)</p>
-    </section>
-    
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="poltfolio-item" onclick="showDetails('flag')">FLAG</div>
-      <div class="poltfolio-item" onclick="showDetails('jsp')">JSP 웹페이지</div>
-      
-      <div id="flag" class="portfolio-details">
-        <h3>FLAG: 국기 퀴즈 애플리케이션</h3>
-        <p>전 세계 200개 이상의 국가 깃발을 보고 나라 이름을 맞히는 퀴즈 애플리케이션</p>
-        <p>개발 환경: Android, Java, SQLite, REST API</p>
-        <p>주요 기능: Splash 화면 (Lottie 애니메이션), 퀴즈 기능, 다국어 지원</p>
+  <div id="wrap">
+    <header>
+      <div class="container">
+        <nav>
+          <ul class="gnb clearfix">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <div id="jsp" class="portfolio-details">
-      <h3>JSP 웹페이지</h3>
-      <p>JSP 기반의 웹크롤링 및 게시판 기능 구현</p>
-      <p>개발 환경: Java, JSP, Python, HTML, CSS, MySQL</p>
-      <p>주요 기능: 회원가입, 로그인, 웹크롤링 DB 연동</p>
+    </header>
+
+    <section id="home" class="content0">
+      <div class="container">
+        <p>SHEEPSOON2</p>
+      </div>
+      <div class="bg-shapes">
+        <div class="bg-rect"></div>
+        <div class="bg-rect"></div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="skills" class="content1">
+      <h2>SKILLS</h2>
+      <div class="content1-0">
+        <div class="content1-1">
+          <h4>💻 언어</h4>
+          <p>Java, Python, JavaScript</p>
+        </div>
+        <div class="content1-2">
+          <h4>🌐 웹 개발</h4>
+          <p>HTML5, CSS3, JSP</p>
+        </div>
+        <div class="content1-3">
+          <h4>📱 모바일 개발</h4>
+          <p>Android Studio, SharedPreferences, RESTful API (JSON)</p>
+        </div>
+        <div class="content1-4">
+          <h4>🗄️ 데이터베이스</h4>
+          <p>SQLite, MySQL</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="content2">
+      <h2>Portfolio</h2>
+      <div class="container">
+        <ul class="pf clearfix">
+          <li><a href="#flag" onclick="showDetails('flag'); return false;">FLAG</a></li>
+          <li><a href="#jsp" onclick="showDetails('jsp'); return false;">JSP 웹페이지</a></li>
+        </ul>
+        <ul class="view">
+          <li id="flag" class="portfolio-details">
+            <div class="portfolio-content">
+              <div class="text">
+                <h3>FLAG: 국기 퀴즈 애플리케이션</h3>
+                <p>전 세계 200개 이상의 국가 깃발을 보고 나라 이름을 맞히는 퀴즈 애플리케이션</p>
+                <p>개발 환경: Android, Java, SQLite, REST API</p>
+                <p>주요 기능: Splash 화면 (Lottie 애니메이션), 퀴즈 기능, 다국어 지원</p>
+              </div>
+              <div class="img">
+                <img src="images/flag_img.png" alt="FLAG 앱 이미지">
+              </div>
+            </div>
+          </li>
+          <li id="jsp" class="portfolio-details">
+            <div class="portfolio-content">
+              <div class="text">
+                <h3>JSP 웹페이지</h3>
+                <p>JSP 기반의 웹크롤링 및 게시판 기능 구현</p>
+                <p>개발 환경: Java, JSP, Python, HTML, CSS, MySQL</p>
+                <p>주요 기능: 회원가입, 로그인, 웹크롤링 DB 연동</p>
+              </div>
+              <div class="img">
+                <img src="images/jsp_img.png" alt="JSP 웹페이지 이미지">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="content3">
       <h2>Contact</h2>
-      <p>Email: <a href="sheepsoon2@gmail.com">sheepsoon2@gmail.com</a></p>
-    </section> -->
+      <div class="container">
+        <p>Email: <a href="mailto:sheepsoon2@gmail.com">sheepsoon2@gmail.com</a></p>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
